@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio2</title>
+    <style>
+         label, input{
+            display: block;
+            margin: 0.3rem;
+            margin-left: 0.25rem;
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Producto</legend>
+    <form>
+        <label for="serie">Escribe numero serie:</label>
+        <input type="text" id="serie" name="serie" placeholder="Escribe el numero de serie" title="Escribe el numero de serie" pattern="[0-9]{5}[a-zA-ZñÑ]{3}">
+        <label for="marca">Marca del producto:</label>
+        <select name="lista" id="lista" name="lista">
+            <option id="pelicula" value="pelicula">Pelicula</option>
+            <option id="videojuego" value="videojuego">Videojuego</option>
+            <option id="mochila" value="mochila">Mochila</option>
+            <option id="lampara" value="lampara">Lampara</option>
+            <option id="martillo" value="martillo">Martillo</option>
+        </select>
+        <label for="precio">Precio:</label>
+        <input type="text" id="precio" name="precio" placeholder="Introduce el precio" title="Introduce el precio" pattern="[0-9]{5}([,][0-9]{2})?">
+    </fieldset>
+    <input type="submit" id="boton" value="Enviar">
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio3</title>
+    <style>
+        label, input{
+           display: block;
+           margin: 0.3rem;
+           margin-left: 0.25rem;
+           width: 10rem;
+       }
+   </style>
+</head>
+<body>
+    <form>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre Persona:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduce el nombre" title="Introduce el nombre" pattern="[a-zA-ZñÑ ]{15}">
+        <label for="anio">Año de nacimiento:</label>
+        <input type="number" id="anio" name="anio" placeholder="Introduce el año de nacimiento" title="Introduce el año de nacimiento" min="1900" max="2022">
+        <label for="afiliado">Numero de afiliado</label>
+        <input type="text" name="afiliado" id="afiliado" placeholder="Introduce el numero de afiliacion" title="Introduce el numero de afiliacion" pattern="[A-ZÑ]{1}[0-9]{6}">
+    </fieldset>
+    <input type="submit" id="boton" value="Enviar">
+    </form>
+</body>
+</html>
